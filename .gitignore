@@ -1,0 +1,65 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.next/
+out/
+coverage/
+parcel-cache/
+.cache/
+.vite/
+vite.config.ts.timestamp*
+
+# Debug
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# React specific
+# (if client-side folder exists)
+client/node_modules/
+client/build/
+client/.env
+
+# Mongo dump
+dump/
+
+# PM2 logs
+.pids
+*.pid
+*.log
+pm2.log
+
+# Docker
+docker-data/
+docker-compose.override.yml
