@@ -1,9 +1,11 @@
 const login = (req, res) => {
-  res.send("Login Accessed!!");
+  res.send("login Accessed!!");
 };
 
 const register = (req, res) => {
-  res.send("Register Accessed!!");
+  console.log(req.body);
+  const { businessName, email, password } = req.body;
+  res.send("Signup Accessed")
 };
 
 module.exports = {
