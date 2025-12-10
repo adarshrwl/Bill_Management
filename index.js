@@ -8,8 +8,8 @@ const app = express();
 app.use(express.json());
 
 // Basic Route
-app.get("/", (req, res) => {
-  res.send("Backend is running...");
+app.get("/health", (req, res) => {
+  res.send("Status Okay!!!");
 });
 
 // Start Server
@@ -17,3 +17,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+const authRoutes = require("./routes/authroutes");
+app.get("/auth", authRoutes);
